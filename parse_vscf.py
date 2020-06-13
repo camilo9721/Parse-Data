@@ -4,8 +4,10 @@
 
 # LAST VERSION 13/06/2020
 
-# This code allows to parse information from a VSCF calculation ran in Molpro. 
+# This code allows to parse information from a VSCF calculation run in Molpro.
 # The code is divided into two sections and produces two final csv file: freq_int_vscf.txt and results.txt
+# In order to better undersatnd the script, I do recommend to go into each section within the two parts and see what the dummy files look like. Hopefully, this will provide a better picture of the script's workflow.
+
 
 # Code Preamble 
 
