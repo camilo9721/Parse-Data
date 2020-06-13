@@ -90,11 +90,11 @@ os.remove('temp4.txt')
 
 # This sections allows to obatin the vibrational zero point energies at the VSCF and Harmonic levels
 # As well as the computational time taken to perform the VSCF calculation
-# The output of this section is the results.txt file in csv format.
+# The output of this section is the results_vscf.txt file in csv format.
 # The columns in the file are placed as follows: File Name (name), VSCF Zero Point Energy (VZPE), VSCF Comp. Time (vscf_t), Harmonic
 # Zero Point Energy (HZPE)
 
-with open('{0}'.format(name),'r') as x, open ('results.txt','a') as y:
+with open('{0}'.format(name),'r') as x, open ('results_vscf.txt','a') as y:
     f = x.readline()
     while f:
         if (f.startswith(' VSCF') and len(f.split()) == 3 and not f.startswith(' VSCF/')):
